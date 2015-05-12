@@ -1,0 +1,19 @@
+For INSTALL from sources in debian do,
+
+# apt-get install autoconf automake
+# apt-get install gettext
+# apt-get install libtool
+# apt-get install pkg-config
+# apt-get install zlib1g-dev
+# apt-get install libpcre3-dev
+# apt-get install sqlite3 libsqlite3-dev
+# apt-get install bison
+# apt-get install libsnmp-dev
+# apt-get install libgd-dev 
+# apt-get install qt4-default libqt4-dev
+
+
+$ autoreconf -ivf
+$ ./configure --disable-MySQL --disable-FireBird --disable-PostgreSQL --disable-SoundCard
+$ make
+$ make install
